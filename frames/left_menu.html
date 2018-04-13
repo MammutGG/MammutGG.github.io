@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styles/button.css">
-
+    <link rel="stylesheet" href="../styles/left.css">
 </head>
 
 <body style="background: #ffffff">
     <div>
-        <font size=5 color="#000000">
-            <p align="center">
-                <strong>Навигация</strong>
+        <font size=5 color="#000000" >
+            <p align="center" style="margin-top: 10%; ">
+                <strong >Навигация</strong>
             </p>
         </font>
     </div>
@@ -21,21 +21,22 @@
         <a target="content" href="content.html#prom" class="mButton">Промышленность</a>
         <a target="content" href="content.html#kolvo" class="mButton">Население</a>
     </div>
-    <div>
-        <p align="center">Текущее время:</p>
+    <div id="current_time_block">
+        <p align="center" id="current_time">Текущее время:</p>
         <marquee>
             <script type="text/javascript">
                 document.write(new Date);
             </script>
         </marquee>
     </div>
-    <div>
-        <p align="center">Совет дня</p>
+    <div class="sovet_block" id="sovet">
+        <p align="center" id="sovet_n">Совет дня</p>
         <p align='center'>
             <script type="text/javascript">
-                var mass = ['Не болейте', 'Не ешьте жёлтый снег', 'Не бегайте перед сном'];
+                var mass = ['"Не болейте"', '"Не ешьте жёлтый снег"', '"Не бегайте перед сном"'];
                 var a;
                 a = Math.floor(Math.random() * mass.length);
+                mass.si
                 document.write(mass[a]);
             </script>
         </p>

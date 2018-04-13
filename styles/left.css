@@ -1,0 +1,24 @@
+#current_time {
+    font-size: 20px;
+}
+
+#current_time_block {
+    margin-top: 2%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 2%;
+    border: 2px solid rgb(0, 0, 0);
+    width: 230px;
+    margin-left: 2%;
+}
+
+#sovet {
+    margin-top: 2%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    width: 230px;
+    margin-left: 2%;
+}
+
+#sovet_n {
+    font-size: 20px;
+}

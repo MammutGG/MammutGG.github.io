@@ -1,0 +1,44 @@
+body {
+    background: #050505;
+    padding: 10px;
+    font-size: 160%;
+    line-height: 1.4;
+}
+
+.main-menu {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    list-style: none;
+
+}
+
+.main-menu li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.main-menu a {
+    display: inline-block;
+    color: #ffffff;
+    line-height: 1;
+    text-decoration:none;
+    font-style:normal;
+    cursor: pointer;
+    position:relative;
+}
+.main-menu a:after {
+    background-color: #ffffff;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    left:50%;
+    position:absolute;
+    transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    transform:  translateX(-50%);
+}
+.main-menu a:hover:after,
+.main-menu a:focus:after {
+    width: 100%;
+}

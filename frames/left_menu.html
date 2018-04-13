@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/button.css">
+
+</head>
+
+<body style="background: #ffffff">
+    <div>
+        <font size=5 color="#000000">
+            <p align="center">
+                <strong>Навигация</strong>
+            </p>
+        </font>
+    </div>
+    <div>
+        <a target="content" href="content.html#history" class="mButton">Основание</a>
+        <a target="content" href="content.html#revolution" class="mButton">Гражданские войны</a>
+        <a target="content" href="content.html#sovet" class="mButton">Советский период</a>
+        <a target="content" href="content.html#prom" class="mButton">Промышленность</a>
+        <a target="content" href="content.html#kolvo" class="mButton">Население</a>
+    </div>
+    <div>
+        <p align="center">Текущее время:</p>
+        <marquee>
+            <script type="text/javascript">
+                document.write(new Date);
+            </script>
+        </marquee>
+    </div>
+    <div>
+        <p align="center">Совет дня</p>
+        <p align='center'>
+            <script type="text/javascript">
+                var mass = ['Не болейте', 'Не ешьте жёлтый снег', 'Не бегайте перед сном'];
+                var a;
+                a = Math.floor(Math.random() * mass.length);
+                document.write(mass[a]);
+            </script>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -51,6 +51,10 @@ img {
     border: 1px solid #333; /* Параметры рамки */
 }
 
+body {
+    position: fixed;
+}
+
 ::-webkit-scrollbar-button {
     background-image:url('');
     background-repeat:no-repeat;

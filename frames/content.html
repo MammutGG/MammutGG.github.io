@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styles/content.css">
     <link rel="stylesheet" href="../styles/button.css">
+    <link rel="stylesheet" href="../styles/video.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="../js/jquery.smoothwheel.js"></script>
     <script type="text/javascript">
 
         var countPress = 1;
@@ -23,10 +26,21 @@
 
     </script>
 
+    <script>
+        $(document).ready(function () {
+            $("#wrapper").smoothWheel()
+        });
+
+    </script>
 </head>
 
 <body id="body">
-
+    <div id="trailer" class="is_overlay">
+        <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+            <source src="https://r2---sn-aigzrn7d.googlevideo.com/videoplayback?fvip=2&c=WEB&id=o-ALkgUunEcjW-Q3LmlXAMr6L7LAUjiAln3lxIk92eFsj0&expire=1523715750&ratebypass=yes&ip=78.129.245.146&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpcm2%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&pcm2=yes&lmt=1471443900420074&dur=174.172&ipbits=0&initcwndbps=1651250&mime=video%2Fmp4&key=yt6&requiressl=yes&signature=0820575F8F32758AE77F708540608F8DD4674EC1.7E73932024D7E976588B2CF1D0184CC535446784&source=youtube&itag=22&pl=23&mt=1523694044&ms=au%2Conr&ei=RrrRWsfyH4LgW5Opm_AC&mn=sn-aigzrn7d%2Csn-5hnednlk&mv=m&mm=31%2C26&video_id=-maBlGLcmOQ&title=%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B9+%D1%80%D0%BE%D0%BB%D0%B8%D0%BA+%D0%A3%D1%81%D1%82%D1%8C-%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA.+%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9+%D1%82%D0%B0%D0%B9%D0%BC%D0%BB%D0%B0%D0%BF%D1%81+%D0%BE+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B5+%D1%81+%D1%86%D0%B5%D0%B9%D1%82%D1%80%D0%B0%D1%84%D0%B5%D1%80%D0%BD%D0%BE%D0%B9+%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%BE%D0%B9"></source>
+            <source src="https://r2---sn-aigzrn7d.googlevideo.com/videoplayback?fvip=2&c=WEB&id=o-ALkgUunEcjW-Q3LmlXAMr6L7LAUjiAln3lxIk92eFsj0&expire=1523715750&ratebypass=yes&ms=au%2Conr&gir=yes&mime=video%2Fwebm&sparams=clen%2Cdur%2Cei%2Cgir%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpcm2%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&pcm2=yes&lmt=1378385202648045&dur=0.000&ipbits=0&initcwndbps=1651250&clen=17623488&key=yt6&requiressl=yes&signature=6B7F1A6F737079A479F60706F2CE54449ED4CC1C.D6EBC57D7D227CD84256FC4418A1AA5B950AB99A&source=youtube&itag=43&pl=23&mt=1523694044&ip=78.129.245.146&ei=RrrRWsfyH4LgW5Opm_AC&mn=sn-aigzrn7d%2Csn-5hnednlk&mv=m&mm=31%2C26&video_id=-maBlGLcmOQ&title=%D0%9B%D1%83%D1%87%D1%88%D0%B8%D0%B9+%D1%80%D0%BE%D0%BB%D0%B8%D0%BA+%D0%A3%D1%81%D1%82%D1%8C-%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA.+%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9+%D1%82%D0%B0%D0%B9%D0%BC%D0%BB%D0%B0%D0%BF%D1%81+%D0%BE+%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B5+%D1%81+%D1%86%D0%B5%D0%B9%D1%82%D1%80%D0%B0%D1%84%D0%B5%D1%80%D0%BD%D0%BE%D0%B9+%D1%81%D1%8A%D0%B5%D0%BC%D0%BA%D0%BE%D0%B9" type="video/webm"></source>
+        </video>
+    </div>
     <p align="right" style="margin-right: 10%;">
         <input type="button" class="read" value="Режим чтения" onclick="return setBg()" title="Изменение цвета фона для комфортного чтения">
     </p>
@@ -229,6 +243,7 @@
             </p>
         </p>
     </div>
+
 </body>
 
 </html>

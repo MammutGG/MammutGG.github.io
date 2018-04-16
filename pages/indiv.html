@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/indiv.css" />
+    <script>
+        function sum() {
+            var k = document.forms['main'].elements['k'].value;
+            var x = document.forms['main'].elements['x'].value;
+            var n = 2;
+            var result=0;
+            for (var i = 2; i <= k; i += 1) {
+
+                result += (x / ((n - 1) * (Math.pow(n, 2)+2)));
+                n += 1;
+            }
+            document.forms["main"].elements["result"].value = result;
+        }
+
+    </script>
+</head>
+
+<body>
+    <form name="main">
+        <div class="main">
+            <div class="about">
+                <p id="subj">
+                    Дана сумма. Разработать приложения для вычисления этой суммы при заданных K и X.
+                </p>
+            </div>
+            <div class="in">
+
+                <input class="input_text" type="text" name="k">
+                <input class="input_text" type="text" name="x">
+            </div>
+            <div>
+                <input id="button" value="Найти сумму" type="button" onclick="sum()">
+            </div>
+            <div class="out">
+                <input id="outtext" type="text" name="result">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

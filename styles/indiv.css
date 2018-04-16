@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.main {
+    width: 800px;
+    border: 2px solid black;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.about {
+    width: 700px;
+    border: 2px solid black;
+    margin: 20px auto;
+    border-radius: 5px;
+
+}
+
+.in {
+    width: 700px;
+    border: 2px solid black;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.input_text {
+    width: 200px;
+    height: 30px;
+    margin: 20px auto;
+    display: grid;
+    border: 1px solid green;
+    font-family: 'Gugi', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+.out {
+    width: 700px;
+    border: 2px solid black;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+#subj {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#button {
+    width: 700px;
+    margin: 20px auto;
+    display: grid;
+    height: 50px;
+    font-family: 'Gugi', cursive;
+    font-size: 28px;
+}
+
+#outtext {
+    width: 300px;
+    height: 30px;
+    margin: 20px auto;
+    display: grid;
+    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Gugi', cursive;
+    font-size: 20px;
+    text-align: center;
+}
